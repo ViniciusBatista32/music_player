@@ -1,0 +1,161 @@
+:root
+{
+    --primary: #6c0d0d;
+    --primary_alt: #780c0c
+    --secondary: #3b0b06;
+    --foreground: #1d1c1e;
+    --background: #000000;
+}
+
+@font-face
+{
+    src: url("../fonts/Asap-Light.ttf");
+    font-family: "asap";
+    font-weight: 300
+}
+
+@font-face
+{
+    src: url("../fonts/Asap-Regular.ttf");
+    font-family: "asap";
+    font-weight: 400
+}
+
+@font-face
+{
+    src: url("../fonts/Asap-Medium.ttf");
+    font-family: "asap";
+    font-weight: 500
+}
+
+@font-face
+{
+    src: url("../fonts/Asap-SemiBold.ttf");
+    font-family: "asap";
+    font-weight: 600
+}
+
+@font-face
+{
+    src: url("../fonts/Asap-Bold.ttf");
+    font-family: "asap";
+    font-weight: 700
+}
+
+html, body
+{
+    padding: 0px;
+    margin: 0px;
+
+    font-family: asap;
+    color: #ffffff;
+
+    overflow: hidden;
+}
+
+.title_1
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+.application
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    height: calc(100vh - 10px);
+    padding: 5px;
+
+    background-color: var(--background);
+}
+
+.top_bar
+{
+    flex: 1;
+
+    width: 100%;
+    z-index: 1;
+
+    background-color: var(--foreground);
+}
+
+.content
+{
+    display: flex;
+    gap: 5px;
+    flex: 15;
+    
+    width: 100%;
+}
+
+.bottom_bar
+{
+    flex: 1;
+    width: 100%;
+    background-color: var(--foreground);
+}
+
+.left_bar
+{
+    flex: 1;
+    background-color: var(--foreground);
+}
+
+.navigation
+{
+    flex: 15;
+}
+
+.right_bar
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 3;
+}
+
+.queue
+{
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+
+    width: 100%;
+
+    background-color: var(--foreground);
+}
+
+.queue_title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.queue_list
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.thumb
+{
+    flex: 1;
+
+    width: 100%;
+    
+    background-color: var(--foreground);
+}
+
+.card
+{
+    border-radius: 4px;
+}
